@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dubashi.aduba_000.dcf" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".WACCstatement"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".revenueProjectionsActivity"
+            android:label="@string/title_activity_revenue_projections" >
+        </activity>
+        <activity
+            android:name=".rev"
+            android:label="@string/title_activity_rev" >
+        </activity>
+    </application>
+
+</manifest>

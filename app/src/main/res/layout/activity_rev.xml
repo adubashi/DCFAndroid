@@ -1,0 +1,349 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.dubashi.aduba_000.dcf.rev">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1"
+            >
+
+            <TableRow>
+                <TextView
+                    android:text="Revenue Projections"
+                    android:padding="3dip"
+                    android:id="@+id/revenueProjections"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Years"
+                    android:padding="3dip"
+                    android:id="@+id/yearsLabel"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/yearsValue"
+                    android:layout_column="1"
+                    android:text="0"
+                    />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Growth Rate"
+                    android:padding="3dip"
+                    android:id="@+id/growthRate"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/growthValue"
+                    android:layout_column="1"
+                    android:text="0"
+                    />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Initial Revenue"
+                    android:padding="3dip"
+                    android:id="@+id/initialRevenueLabel"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/initialRevenueValue"
+                    android:layout_column="1"
+                    android:text="0"
+                    />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Operating Costs Margin"
+                    android:padding="3dip"
+                    android:id="@+id/operatingCostsMarginLabel"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/operatingCostsMarginValue"
+                    android:layout_column="1"
+                    android:text="0"
+                    />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Tax Rate"
+                    android:padding="3dip"
+                    android:id="@+id/taxRateLabel"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/taxRateValue"
+                    android:layout_column="1"
+                    android:text="0"
+                    />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Net Investment Percent"
+                    android:padding="3dip"
+                    android:id="@+id/netInvestmentPercentLabel"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/netInvestmentPercentValue"
+                    android:layout_column="1"
+                    android:text="0"
+                    />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Initial Working Capital"
+                    android:padding="3dip"
+                    android:id="@+id/initialWorkingCapitalLabel"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/initialWorkingCapitalValue"
+                    android:layout_column="1"
+                    android:text="0"
+                    />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Initial Change in Working Capital"
+                    android:padding="3dip"
+                    android:id="@+id/initialChangeInWorkingCapitalLabel"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/initialChangeInWorkingCapitalValue"
+                    android:layout_column="1"
+                    android:text="0"
+                    />
+
+            </TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit Changes"
+                android:id="@+id/submitChanges"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/revenueProjectionsLabel"
+                android:layout_column="1"
+                android:text="Revenue Projections"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+
+
+
+            <TableRow>
+                <TextView
+                    android:text="Years"
+                    android:padding="3dip"
+                    android:id="@+id/yearLabel"
+                    />
+                <TextView
+                    android:text=""
+                    android:padding="3dip"
+                    android:id="@+id/yearList"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Revenue"
+                    android:padding="3dip"
+                    android:id="@+id/revenueLabel"
+                    />
+                <TextView
+                    android:text=""
+                    android:padding="3dip"
+                    android:id="@+id/revenueList"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Operating Costs"
+                    android:padding="3dip"
+                    android:id="@+id/operatingCostsLabel"
+                    />
+                <TextView
+                    android:text=""
+                    android:padding="3dip"
+                    android:id="@+id/operatingCostsList"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Operating Profit"
+                    android:padding="3dip"
+                    android:id="@+id/operatingProfitLabel"
+                    />
+                <TextView
+                    android:text=""
+                    android:padding="3dip"
+                    android:id="@+id/operatingProfitList"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Taxes"
+                    android:padding="3dip"
+                    android:id="@+id/taxesLabel"
+                    />
+                <TextView
+                    android:text=""
+                    android:padding="3dip"
+                    android:id="@+id/taxesList"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="After Tax Profit"
+                    android:padding="3dip"
+                    android:id="@+id/afterTaxProfitLabel"
+                    />
+                <TextView
+                    android:text=""
+                    android:padding="3dip"
+                    android:id="@+id/afterTaxProfitList"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Net Investment"
+                    android:padding="3dip"
+                    android:id="@+id/netInvestmentLabel"
+                    />
+                <TextView
+                    android:text=""
+                    android:padding="3dip"
+                    android:id="@+id/netInvestmentList"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Working Capital"
+                    android:padding="3dip"
+                    android:id="@+id/workingCapitalLabel"
+                    />
+                <TextView
+                    android:text=""
+                    android:padding="3dip"
+                    android:id="@+id/workingCapitalList"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Change in Working Capital"
+                    android:padding="3dip"
+                    android:id="@+id/changeInWorkingCapitalLabel"
+                    />
+                <TextView
+                    android:text=""
+                    android:padding="3dip"
+                    android:id="@+id/changeInWorkingCapitalList"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Free Cash Flow"
+                    android:padding="3dip"
+                    android:id="@+id/freeCashFlowLabel"
+                    />
+                <TextView
+                    android:text=""
+                    android:padding="3dip"
+                    android:id="@+id/freeCashFlowList"
+                    />
+            </TableRow>
+
+
+
+
+
+
+        </TableLayout>
+
+
+
+
+    </HorizontalScrollView>
+
+    </ScrollView>
+
+</RelativeLayout>

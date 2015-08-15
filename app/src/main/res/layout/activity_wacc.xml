@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".WACC">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1"
+        >
+
+        <TableRow>
+            <TextView
+                android:text="WACC calculator"
+                android:padding="3dip"
+                android:id="@+id/balanceSheetLineItems"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Risk Free Rate"
+                android:padding="3dip"
+                android:id="@+id/riskFreeRateLabel"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/riskFreeRateValue"
+                android:layout_column="1"
+                android:text="0"
+                />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Beta"
+                android:padding="3dip"
+                android:id="@+id/betaLabel"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/betaValue"
+                android:layout_column="1"
+                android:text="0"
+                />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Risk Premium"
+                android:padding="3dip"
+                android:id="@+id/riskPremiumLabel"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/riskPremiumValue"
+                android:layout_column="1"
+                android:text="0"
+                />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Corporate Tax Rate"
+                android:padding="3dip"
+                android:id="@+id/corpTaxRateLabel"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/corpTaxRateValue"
+                android:layout_column="1"
+                android:text="0"
+                />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Market Rate of Debt"
+                android:padding="3dip"
+                android:id="@+id/marketRateOfDebtLabel"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/marketRateOfDebtValue"
+                android:layout_column="1"
+                android:text="0"
+                />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Equity to Total"
+                android:padding="3dip"
+                android:id="@+id/equityToTotalLabel"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/equityToTotalValue"
+                android:layout_column="1"
+                android:text="0"
+                />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Debt to Total"
+                android:padding="3dip"
+                android:id="@+id/debtToTotalLabel"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/debtToTotalValue"
+                android:layout_column="1"
+                android:text="0"
+                />
+
+        </TableRow>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Changes"
+            android:id="@+id/submitChanges"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/waccLabel"
+            android:layout_column="1"
+            android:text="Resulting WACC"
+            android:textAlignment="center"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:inputType="number"
+            android:ems="1000"
+            android:id="@+id/waccVal"
+            android:layout_column="1"
+            android:text="0"
+            android:textSize="75dp" />
+
+
+    </TableLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
